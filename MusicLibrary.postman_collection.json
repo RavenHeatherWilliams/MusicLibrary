@@ -1,0 +1,312 @@
+{
+	"info": {
+		"_postman_id": "47704bd0-15b4-47ec-8d9b-d02d85d91272",
+		"name": "MusicLibrary",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12256261"
+	},
+	"item": [
+		{
+			"name": "Music Library - Get All",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "Drops of Jupiter",
+							"type": "text"
+						},
+						{
+							"key": "artist",
+							"value": "Train",
+							"type": "text"
+						},
+						{
+							"key": "album",
+							"value": "Drops of Jupiter",
+							"type": "text"
+						},
+						{
+							"key": "release_date",
+							"value": "2001-03-27",
+							"type": "text"
+						},
+						{
+							"key": "genre",
+							"value": "pop",
+							"type": "text"
+						},
+						{
+							"key": "likes",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/music",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"music"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Music Library - Post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "artist",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "album",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "release_date",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "genre",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "likes",
+							"value": "0",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/music",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"music"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Music Library - Put",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "artist",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "album",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "release_date",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "genre",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "likes",
+							"value": "0",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/music/1/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"music",
+						"1",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Music Library - Get One",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "Drops of Jupiter",
+							"type": "text"
+						},
+						{
+							"key": "artist",
+							"value": "Train",
+							"type": "text"
+						},
+						{
+							"key": "album",
+							"value": "Drops of Jupiter",
+							"type": "text"
+						},
+						{
+							"key": "release_date",
+							"value": "2001-03-27",
+							"type": "text"
+						},
+						{
+							"key": "genre",
+							"value": "pop",
+							"type": "text"
+						},
+						{
+							"key": "likes",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/music/1/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"music",
+						"1",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Music Library - Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "Drops of Jupiter",
+							"type": "text"
+						},
+						{
+							"key": "artist",
+							"value": "Train",
+							"type": "text"
+						},
+						{
+							"key": "album",
+							"value": "Drops of Jupiter",
+							"type": "text"
+						},
+						{
+							"key": "release_date",
+							"value": "2001-03-27",
+							"type": "text"
+						},
+						{
+							"key": "genre",
+							"value": "pop",
+							"type": "text"
+						},
+						{
+							"key": "likes",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/music/1/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"music",
+						"1",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

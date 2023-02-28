@@ -15,6 +15,34 @@
 				"method": "GET",
 				"header": [],
 				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/music/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"music",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Music Library - Post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
 					"mode": "formdata",
 					"formdata": [
 						{
@@ -44,71 +72,13 @@
 						},
 						{
 							"key": "likes",
-							"value": "1",
-							"type": "text"
-						}
-					]
-				},
-				"url": {
-					"raw": "http://127.0.0.1:8000/api/music",
-					"protocol": "http",
-					"host": [
-						"127",
-						"0",
-						"0",
-						"1"
-					],
-					"port": "8000",
-					"path": [
-						"api",
-						"music"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Music Library - Post",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "formdata",
-					"formdata": [
-						{
-							"key": "title",
-							"value": "",
-							"type": "text"
-						},
-						{
-							"key": "artist",
-							"value": "",
-							"type": "text"
-						},
-						{
-							"key": "album",
-							"value": "",
-							"type": "text"
-						},
-						{
-							"key": "release_date",
-							"value": "",
-							"type": "text"
-						},
-						{
-							"key": "genre",
-							"value": "",
-							"type": "text"
-						},
-						{
-							"key": "likes",
 							"value": "0",
 							"type": "text"
 						}
 					]
 				},
 				"url": {
-					"raw": "http://127.0.0.1:8000/api/music",
+					"raw": "http://127.0.0.1:8000/api/music/",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -119,7 +89,8 @@
 					"port": "8000",
 					"path": [
 						"api",
-						"music"
+						"music",
+						""
 					]
 				}
 			},
@@ -131,39 +102,8 @@
 				"method": "PUT",
 				"header": [],
 				"body": {
-					"mode": "formdata",
-					"formdata": [
-						{
-							"key": "title",
-							"value": "",
-							"type": "text"
-						},
-						{
-							"key": "artist",
-							"value": "",
-							"type": "text"
-						},
-						{
-							"key": "album",
-							"value": "",
-							"type": "text"
-						},
-						{
-							"key": "release_date",
-							"value": "",
-							"type": "text"
-						},
-						{
-							"key": "genre",
-							"value": "",
-							"type": "text"
-						},
-						{
-							"key": "likes",
-							"value": "0",
-							"type": "text"
-						}
-					]
+					"mode": "raw",
+					"raw": ""
 				},
 				"url": {
 					"raw": "http://127.0.0.1:8000/api/music/1/",

@@ -25,7 +25,12 @@ SECRET_KEY = 'django-insecure-utk&h)^dvq=5-v=6-p13pgd6+kgyyu!6&e9!4o*4$3ad7rs*dd
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+# ALLOWED_HOSTS = ['http://127.0.0.1', 'http://localhost']
+
+
+CORS_ORIGIN_ALLOW_ALL = True
+
+# CORS_ALLOWED_ORIGINS = ('http://127.0.0.1', 'http://localhost')
 
 APPEND_SLASH=False
 
@@ -40,12 +45,15 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    'musiclib'
+    'musiclib',
+    'corsheaders'
+
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
